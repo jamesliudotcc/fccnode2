@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/api/whoami/', (req, res) => {
-  responseObject = {
+  let responseObject = {
     ipaddress: req.ip,
     language: req.get('accept-language'),
     software: req.get('user-agent'),
